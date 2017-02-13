@@ -3,9 +3,12 @@
 // the following array.
 
 var arr = [3, 4, 6, 0];
+arr.push(32);
 
 // 2 - Remove the first value from
 // arr using the Array built-in method slice.
+arr.slice(0);
 
 
 // 3 - Add the number 11 to the beginning of arr
+arr.unshift(11);
