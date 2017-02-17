@@ -23,7 +23,7 @@ mkdir
 
 # 6 - What is the command for listing the files in the current directory?
 
-ls
+ls -a //corrected
 
 # 7 - What is the command for listing all files, including hidden files in the current directory?
 

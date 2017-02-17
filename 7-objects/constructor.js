@@ -8,15 +8,15 @@
 // - perimeter() returns the perimeter of this triangle
 
 function RightTriangle(side1,side2,base){
-  side1,
-  side2,
-  base,
-  area = function(base, side1){
+  this.side1 = side1;
+  this.side2 = side2;
+  this.base = base;
+  this.area = function(base, side1){
     return (this.side1 * this.base) / 2;
   },
 
-  perimeter =  function(side1,side2,side3){
-    return (this.side1 + this.side2 + this.side3);
+  this.perimeter = function(side1,side2,base){
+    return (this.side1 + this.side2 + this.base);
   }
 
 
@@ -30,5 +30,10 @@ function RightTriangle(side1,side2,base){
 // object. Console log the results of calling
 // both functions on both instances.
 
-new RightTriangle(2,3,4);
-console.log(area());
+var triangleOne = new RightTriangle(2,3,4);
+console.log(triangleOne.area());
+console.log(triangleOne.perimeter());
+
+var triangleTwo = new RightTriangle (4,5,6);
+console.log(triangleTwo.area());
+console.log(triangleTwo.perimeter());

@@ -14,6 +14,6 @@ $(document).ready(function(){
 
   // 3 - Get rid of (delete) the useless unordered list (ul) by first
   // selecting the h2 nested within its list item.
-  $('ul').child().next().remove();
-
+   $('h2').parent().parent().remove();
+//
 )};

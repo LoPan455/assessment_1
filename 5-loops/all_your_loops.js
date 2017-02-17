@@ -17,7 +17,13 @@ while(checkz > -6 ){
   checkz -= 2;
 }
 
+//were you looking for:
 
+var i = 0;  //added a counter variable to track iterations
+while(i < 3){
+  checkz -= 2;
+  i++;
+}
 
 
 // 3 - Summarize in English what this code is doing.

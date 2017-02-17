@@ -29,7 +29,12 @@ prime.address = '9401 James Ave S #152'
 
 
 prime.addressConcat = function(){
-  console.log(prime.address +' '+ prime.city + ' ' + prime.state + ' ' + prime.zip);
+  //code changed to reference 'this.xxx'.
+  console.log(this.address +' '+ this.city + ' ' + this.state + ' ' + this.zip);
 }
 
 prime.addressConcat();
+
+
+//Ok, I see what you mean.  One of the object's methods is called, and therefore
+//it will use it's own attributes.  Therefore, we use 'this' to pull in those attributes.
